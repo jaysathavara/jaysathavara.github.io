@@ -54,42 +54,80 @@
         </p>
         <div class="gallary-container">
             <div class="product-1">
-                <img src="/images/residential-1.jpg" alt="">
+                <img src="/images/residential-1.jpg" alt=""
+                onclick="fullView(this.src)">
             </div>
             <div class="product-2">
-                <img src="/images/residential-2.jpg" alt="">
+                <img src="/images/residential-2.jpg" alt="" onclick="fullView(this.src)">
             </div>
             <div class="product-3">
-                <img src="/images/residential-3.jpg" alt="">
+                <img src="/images/residential-3.jpg" alt="" onclick="fullView(this.src)">
             </div>
             <div class="product-4">
-                <img src="/images/residential-4.jpg" alt="">
+                <img src="/images/residential-4.jpg" alt="" onclick="fullView(this.src)">
             </div>
             <div class="product-5">
-                <img src="/images/residential-5.jpg" alt="">
+                <img src="/images/residential-5.jpg" alt="" onclick="fullView(this.src)">
             </div>
             <div class="product-6">
-                <img src="/images/residential-7.jpg" alt="">
+                <img src="/images/residential-7.jpg" alt="" onclick="fullView(this.src)">
             </div>
             <div class="product-7">
-                <img src="/images/residential-7.jpg" alt="">
+                <img src="/images/residential-7.jpg" alt="" onclick="fullView(this.src)">
             </div>
             <div class="product-8">
-                <img src="/images/residential-8.jpg" alt="">
+                <img src="/images/residential-8.jpg" alt="" onclick="fullView(this.src)">
             </div>
             <div class="product-9">
-                <img src="/images/residential-9.jpg" alt="">
+                <img src="/images/residential-9.jpg" alt="" onclick="fullView(this.src)">
             </div>
             <div class="product-10">
-                <img src="/images/residential-10.jpg" alt="">
+                <img src="/images/residential-10.jpg" alt="" onclick="fullView(this.src)"> 
             </div>
             <div class="product-11">
-                <img src="/images/residential-11.jpg" alt="">
+                <img src="/images/residential-11.jpg" alt="" onclick="fullView(this.src)">
             </div>
             <div class="product-12">
-                <img src="/images/residential-12.jpg" alt="">
+                <img src="/images/residential-12.jpg" alt="" onclick="fullView(this.src)">
             </div>
         </div>
+        <div id="fullimageview">
+            <img  id="FullImage" />
+            <span id="closeButton" onclick="closeFullView()">&times;</span>
+        </div>
     </section>
-</body>
-</html>
+    <footer class="footer">
+        <div class="first">
+            <ul class="footer-menu">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="">OUR COMPANY</a></li>
+                <li><a href="">Solid Surface</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="second">
+            <div class="logo">
+                HopeSolidSurface
+            </div>
+        </div>
+        <div class="third">
+            <h2>Office Address</h2>
+            <p>11, Sun Spot Raw House, Near GuruDwara, S.G.Highway, BodakDev, Ahmedabad-380 059, Gujarat(India)</p>
+            <i class="bi bi-telephone-fill"><a href="tel:+9510752155">+91-9510752155</a></i>
+            <i class="bi bi-envelope-fill"><a href="mailto:jaysathwara757@gmail.com">jaysathwara757@gmail.com</a></i>
+        </div>
+        <div class="fourth">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-instagram"></i>
+        </div>
+    </footer>
+    <script>
+           function fullView(ImgLink){
+         document.getElementById('FullImage').src =ImgLink;
+         document.getElementById('fullimageview').style.display = "block";     
+   }
+   function closeFullView(){
+    document.getElementById('fullimageview').style.display = "none";
+   }
+    </script>
