@@ -14,10 +14,14 @@
     <div class="logo">
       <img src="./assets/images/Logo-removebg-preview.png" alt="Mahadev Book" />
     </div>
-
+    <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
     <!-- Menu -->
     <nav>
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="navMenu">
         <li><a href="#">Home</a></li>
         <li><a href="#">Blogs</a></li>
 
@@ -344,6 +348,13 @@
         icon.textContent = "−";
       }
     });
+  });
+    const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
   });
 </script>
 
