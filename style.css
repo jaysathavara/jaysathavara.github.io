@@ -525,6 +525,11 @@ section {
     gap: 6px;
     cursor: pointer;
   }
+  
+  .logo {
+        margin-right: 268px;
+
+  }
 
   .hamburger span {
     width: 28px;
